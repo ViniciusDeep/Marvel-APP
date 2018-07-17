@@ -29,7 +29,15 @@ class MarvelAPI {
         
         let url = basePath + "offset=\(offset)&limit=\(limit)&" + startsWith + getCredentials()
         print(url)
-        Alamofire.request(url).responseJSON(completionHandler: <#T##(DataResponse<Any>) -> Void#>)
+        Alamofire.request(url).responseJSON { (response) in
+            guard let data = response.data,
+                let marvelInfo = try? JSONDecoder().decode(MarvelInfo.self, from: data),
+                marvelInfo.code == 200 else {
+                    onComplete(nil)
+                    return
+            }
+            onComplete(marvelInfo)
+        }
     }
   
     
