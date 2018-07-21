@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oJr-sf-MgO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,7 +31,7 @@
         <!--View Controller-->
         <scene sceneID="9ha-9J-Kth">
             <objects>
-                <viewController id="IsA-ug-Rpq" customClass="ViewController" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IsA-ug-Rpq" customClass="ViewController" customModule="HeroisMarvel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hml-B9-uH9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,7 +104,7 @@
         <!--Heróis MARVEL-->
         <scene sceneID="AR9-1q-jeT">
             <objects>
-                <tableViewController id="8PA-3y-HgU" customClass="HeroesTableViewController" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="8PA-3y-HgU" customClass="HeroesTableViewController" customModule="HeroisMarvel" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FUh-cY-Ht2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +115,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="115" id="IvE-zC-P4n" customClass="HeroTableViewCell" customModule="MarvelHeroes" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="115" id="IvE-zC-P4n" customClass="HeroTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IvE-zC-P4n" id="K1H-xf-g0d">
@@ -123,20 +123,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aki-LY-asC">
-                                            <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                            <rect key="frame" x="16" y="11" width="80" height="80"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="80" id="HZe-dz-Chz"/>
                                                 <constraint firstAttribute="width" constant="80" id="xzh-KK-9Rd"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEf-mg-oq0">
-                                            <rect key="frame" x="96" y="8" width="271" height="24"/>
+                                            <rect key="frame" x="104" y="11" width="255" height="24"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3s-sd-nOJ">
-                                            <rect key="frame" x="96" y="40" width="271" height="18"/>
+                                            <rect key="frame" x="104" y="43" width="255" height="18"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -157,9 +157,9 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="ivThumb" destination="Aki-LY-asC" id="CoI-7D-NCS"/>
+                                    <outlet property="ivThumb" destination="Aki-LY-asC" id="Ntw-SF-Dkx"/>
                                     <outlet property="lbDescription" destination="L3s-sd-nOJ" id="zNu-np-iBe"/>
-                                    <outlet property="lbName" destination="sEf-mg-oq0" id="vSu-tI-i5s"/>
+                                    <outlet property="lbName" destination="sEf-mg-oq0" id="7lW-fg-eNc"/>
                                     <segue destination="wbg-dF-UHh" kind="show" id="1JN-Yt-CJs"/>
                                 </connections>
                             </tableViewCell>
@@ -178,7 +178,7 @@
         <!--Hero View Controller-->
         <scene sceneID="PMb-QA-GCb">
             <objects>
-                <viewController id="wbg-dF-UHh" customClass="HeroViewController" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wbg-dF-UHh" customClass="HeroViewController" customModule="HeroisMarvel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dDL-sL-5Dh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
