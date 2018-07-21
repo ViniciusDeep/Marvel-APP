@@ -52,6 +52,12 @@ class HeroesTableViewController: UITableViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! HeroViewController
+        vc.hero = heroes[tableView.indexPathForSelectedRow!.row]
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.backgroundView = heroes.count == 0 ? label : nil
         return heroes.count
