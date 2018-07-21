@@ -30,7 +30,7 @@ struct Hero: Codable {
     let name: String
     let description: String
     let thumbnail: Thumbnail
-    let url: [HeroURL]
+    let urls: [HeroURL]
     
 }
 
