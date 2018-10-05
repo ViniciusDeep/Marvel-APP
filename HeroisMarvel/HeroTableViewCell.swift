@@ -14,7 +14,7 @@ class HeroTableViewCell: UITableViewCell {
     @IBOutlet weak var ivThumb: UIImageView!
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var lbDescription: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -33,12 +33,11 @@ class HeroTableViewCell: UITableViewCell {
         } else {
             ivThumb.image = nil
         }
-        
+
         ivThumb.layer.cornerRadius = ivThumb.frame.size.height / 2
         ivThumb.layer.borderColor = UIColor.red.cgColor
         ivThumb.layer.borderWidth = 2
-        
+
     }
-    
-    
+
 }
